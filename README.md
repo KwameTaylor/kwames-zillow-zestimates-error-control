@@ -17,7 +17,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/17/2020 | Finish MVP of explore.py and model.py.                            |
 | 10/18/2020 | Finish MVP of entire project, start on second MVP iteration.      |
 | 10/19/2020 | Iterate through the data science pipeline up to five times total. |
-| 10/20/2020 | Practice project presentation, sleep.                             |
+| 10/20/2020 | Practice project presentation, calisthenics, sleep.               |
 | 10/21/2020 | Presentation day!                                                 |
 
 The project deliverables are the following: Jupyter Notebook walthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).
