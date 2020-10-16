@@ -9,7 +9,7 @@ Welcome to my data science clustering project: **Kwame's Zillow Zestimates Error
 
 I plan to create an MVP and then iterate through the data science pipeline multiple times.
 
-Project Plan:
+**Project Plan:**
 |    Date    |                                Goal                               |
 |:----------:|:-----------------------------------------------------------------:|
 | 10/15/2020 | Project planning, start on outline/bones of project.              |
