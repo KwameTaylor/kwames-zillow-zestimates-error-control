@@ -5,7 +5,7 @@
 
 # Kwame's Zillow Zestimates Error Control
 
-Welcome to my data science clustering project: **Kwame's Zillow Zestimates Error Control**! This project will use clustering to find the drivers of error in the zestimate of single-unit properties that were isted on Zillow in 2017. I will demonstrate how this data can be used for quality control and preventing more Zestimate errors in the future.
+Welcome to my data science clustering project: **Kwame's Zillow Zestimates Error Control**! This project will use clustering to find the drivers of error in the Zestimate of single-unit properties that were isted on Zillow in 2017. I will demonstrate how this data can be used for quality control and preventing more Zestimate errors in the future.
 
 I plan to create an MVP and then iterate through the data science pipeline multiple times.
 
