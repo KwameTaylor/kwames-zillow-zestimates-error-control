@@ -12,7 +12,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 **Project Plan:**
 |    Date    |                                Goal                               |     Finished?     |
 |:----------:|:-----------------------------------------------------------------:|:-----------------:|
-| 10/15/2020 | Project planning, start on outline/bones of project.              |<ul><li>- [x]</li>
+| 10/15/2020 | Project planning, start on outline/bones of project.              |<ul><li>- [x] </li>
 | 10/16/2020 | Finish MVP of wrangle.py and preprocessing.py.                    |                   |
 | 10/17/2020 | Finish MVP of explore.py and model.py.                            |                   |
 | 10/18/2020 | Finish MVP of entire project, start on second MVP iteration.      |                   |
