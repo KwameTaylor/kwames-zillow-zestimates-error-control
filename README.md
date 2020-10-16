@@ -12,13 +12,13 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 **Project Plan:**
 |    Date    |                                Goal                               |     Finished?     |
 |:----------:|:-----------------------------------------------------------------:|:-----------------:|
-| 10/15/2020 | Project planning, start on outline/bones of project.              |<ul><li>- [x] </li>
-| 10/16/2020 | Finish MVP of wrangle.py and preprocessing.py.                    |                   |
-| 10/17/2020 | Finish MVP of explore.py and model.py.                            |                   |
-| 10/18/2020 | Finish MVP of entire project, start on second MVP iteration.      |                   |
-| 10/19/2020 | Iterate through the data science pipeline up to five times total. |                   |
-| 10/20/2020 | Practice project presentation, calisthenics, sleep.               |                   |
-| 10/21/2020 | Presentation day!                                                 |                   |
+| 10/15/2020 | Project planning, start on outline/bones of project.              |<ul><li>- [ ] </li>
+| 10/16/2020 | Finish MVP of wrangle.py and preprocessing.py.                    |<ul><li>- [ ] </li>
+| 10/17/2020 | Finish MVP of explore.py and model.py.                            |<ul><li>- [ ] </li>
+| 10/18/2020 | Finish MVP of entire project, start on second MVP iteration.      |<ul><li>- [ ] </li>
+| 10/19/2020 | Iterate through the data science pipeline up to five times total. |<ul><li>- [ ] </li>
+| 10/20/2020 | Practice project presentation, calisthenics, sleep.               |<ul><li>- [ ] </li>
+| 10/21/2020 | Presentation day!                                                 |<ul><li>- [ ] </li>
 
 The project deliverables are the following: Jupyter Notebook walthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).
 
