@@ -101,4 +101,31 @@ def prepare_zillow(df):
     # Rename columns for readability
     df = df.rename(columns={"bathroomcnt": "bathcnt", "bedroomcnt": "bedcnt", "calculatedfinishedsquarefeet": "sqft", "regionidcounty": "county", "taxvaluedollarcnt": "value"})
 
+    # Handle fips, turn into county names
+    df = handle_fips(df)
+
     return df
+
+def handle_fips(df):
+        '''
+        Takes in a dataFrame and returns a dataFrame that turns the fips column into a County name column.
+        '''
+        # Check each row for fips value and correctly label the corresponding row in County column
+        df['county'] = df.apply(lambda row: county_name(row), axis=1)
+        # drop fips since I don't need it anymore
+        df = df.drop(columns='fips')
+        return df
+
+def county_name(row):
+    '''
+    This function encodes the fips column as its corresponding County names.
+    Takes in a row and returns a string.
+    '''
+    if row['fips'] == 6037.00:
+        return 'Los Angeles'
+    elif row['fips'] == 6059.00:
+        return 'Orange'
+    elif row['fips'] == 6111.00:
+        return 'Ventura'
+    else:
+        return 'Unknown'
