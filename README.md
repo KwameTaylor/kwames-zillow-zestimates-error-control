@@ -20,7 +20,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/20/2020 | Practice presentation, calisthenics, sleep. (turn in project)     |<ul><li>- [ ] </li>
 | 10/21/2020 | Presentation day!                                                 |<ul><li>- [ ] </li>
 
-The project deliverables are the following: Jupyter Notebook data science pipeline walthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).
+The project deliverables are the following: Jupyter Notebook data science pipeline walkthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).
 
 Data Dictionary:
 [Table here]
