@@ -62,6 +62,7 @@ def prepare_zillow(df):
 
     # Drop more features based on how many nulls are present
     # I'll do it manually this iteration but might choose to automate later
+    # (have to remember how much time I will save - or waste - with automation)
     df = df.drop(columns=['buildingqualitytypeid', 'decktypeid', 'fireplacecnt', 'hashottuborspa', 'poolsizesum', 'pooltypeid10', 'pooltypeid2', 'pooltypeid7', 'threequarterbathnbr', 'fireplaceflag'])
 
     # Drop features that could be useful in a later iteration but are just noise for the MVP
@@ -94,6 +95,10 @@ def prepare_zillow(df):
     # Delete these row indexes from dataFrame
     df = df.drop(cols_to_drop)
 
-    # Now to impute the remaining nulls.
+    # Now to drop propertylandusedesc and unitcnt because I don't need them anymore
+    df = df.drop(columns=['propertylandusedesc', 'unitcnt'])
+
+    # Rename columns for readability
+    df = df.rename(columns={"bathroomcnt": "bathcnt", "bedroomcnt": "bedcnt", "calculatedfinishedsquarefeet": "sqft", "regionidcounty": "county", "taxvaluedollarcnt": "value"})
 
     return df
