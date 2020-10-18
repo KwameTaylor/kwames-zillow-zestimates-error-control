@@ -57,8 +57,18 @@ def impute_nulls(df):
     df.value = df.value.fillna(df.value.median())
     return df
 
-def zillow_scale(df):
+def zillow_scale(X_train, X_validate, X_test):
     '''
     This function WILL take in a DataFrame and return it in scaled form. Implementation on next MVP iteration.
     '''
-    return df
+    scaler = MinMaxScaler().fit(X_train)
+    X_train_scaled = (pd.DataFrame(scaler.transform(X_train), 
+                      columns=X_train.columns, 
+                      index=X_train.index))
+    X_validate_scaled = (pd.DataFrame(scaler.transform(X_validate), 
+                     columns=X_validate.columns,
+                     index=X_validate.index))
+    X_test_scaled = (pd.DataFrame(scaler.transform(X_test), 
+                     columns=X_test.columns,
+                     index=X_test.index))
+    return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
