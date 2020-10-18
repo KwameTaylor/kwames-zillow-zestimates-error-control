@@ -25,7 +25,7 @@ The project deliverables are the following: Jupyter Notebook data science pipeli
 Data Dictionary:
 [Table here]
 
-Hypothesises:
+Hypotheses:
 * x
 * x
 * x
