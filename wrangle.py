@@ -29,7 +29,6 @@ def get_zillow_data():
                 WHERE latitude IS NOT NULL
                 AND longitude IS NOT NULL
                 '''
-#                 AND propertylandusetypeid = '261' OR '262' OR '263' OR '264' OR '268' OR '273' OR '274' OR '275' OR '276' OR '279';
     filename = "zillow_df.csv"
     if os.path.isfile(filename):
         df = pd.read_csv(filename)
