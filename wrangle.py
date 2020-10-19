@@ -101,20 +101,35 @@ def prepare_zillow(df):
     # Rename columns for readability
     df = df.rename(columns={"bathroomcnt": "bathcnt", "bedroomcnt": "bedcnt", "calculatedfinishedsquarefeet": "sqft", "regionidcounty": "county", "taxvaluedollarcnt": "value"})
 
-    # Handle fips, turn into county names
+    # Feature Engineering
+
+    # Add a new feature: bathbedcnt
+    # and drop bedcnt because it's redundant now,
+    # and also because bathcnt has a stronger correlation with value
+    df['bathbedcnt'] = df.bathcnt + df.bedcnt
+    df = df.drop(columns=['bedcnt'])
+
+    # Handle fips, turn into county names as column 'county'
     df = handle_fips(df)
+
+    # Encode County feature
+    # I will map strings into 0s, 1s, and 2s:
+    # 0 = Los Angeles County
+    # 1 = Orange County
+    # 2 = Ventura County
+    df.county = df.county.map({'Los Angeles': 0, 'Orange': 1, 'Ventura': 2})
 
     return df
 
 def handle_fips(df):
-        '''
-        Takes in a dataFrame and returns a dataFrame that turns the fips column into a County name column.
-        '''
-        # Check each row for fips value and correctly label the corresponding row in County column
-        df['county'] = df.apply(lambda row: county_name(row), axis=1)
-        # drop fips since I don't need it anymore
-        df = df.drop(columns='fips')
-        return df
+    '''
+    Takes in a dataFrame and returns a dataFrame that turns the fips column into a County name column.
+    '''
+    # Check each row for fips value and correctly label the corresponding row in County column
+    df['county'] = df.apply(lambda row: county_name(row), axis=1)
+    # drop fips since I don't need it anymore
+    df = df.drop(columns='fips')
+    return df
 
 def county_name(row):
     '''

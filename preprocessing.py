@@ -59,7 +59,8 @@ def impute_nulls(df):
 
 def zillow_scale(X_train, X_validate, X_test):
     '''
-    This function WILL take in a DataFrame and return it in scaled form. Implementation on next MVP iteration.
+    This function takes in X_train, X_validate, X_test
+    dataFrames, and returns them each in scaled form.
     '''
     scaler = MinMaxScaler().fit(X_train)
     X_train_scaled = (pd.DataFrame(scaler.transform(X_train), 
