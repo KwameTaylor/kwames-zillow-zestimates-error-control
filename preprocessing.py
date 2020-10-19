@@ -74,6 +74,15 @@ def zillow_scale(X_train, X_validate, X_test):
                      index=X_test.index))
     return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
 
+def encode_county(df):
+    # Encode County feature
+    # I will map strings into 0s, 1s, and 2s:
+    # 0 = Los Angeles County
+    # 1 = Orange County
+    # 2 = Ventura County
+    df.county = df.county.map({'Los Angeles': 0, 'Orange': 1, 'Ventura': 2})
+    return df
+
 def handle_outliers(df):
     '''This function WILL handle outliers. Implementation in later iteration.
     '''

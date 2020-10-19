@@ -46,14 +46,15 @@ def ttest_viz(train):
     '''
     alpha = 0.05
     prop_2000s = train[train.century == 20.00]
+    prop_1800s = train[train.century == 18.00]
 
     sns.distplot(train.logerror)
     plt.title('Overall Log Error')
     #get rid of outliers on a later iteration
     plt.show()
 
-    sns.distplot(prop_2000s.logerror)
-    plt.title('Log Error of Properties built in the 2000s')
+    sns.distplot(prop_1800s.logerror)
+    plt.title('Log Error of Properties built in the 1800s')
     plt.show()
 
     print('Compare the median and mean:\n', train.logerror.mean(), train.logerror.median())
@@ -64,13 +65,14 @@ def ttest_hypo(train):
     '''
     alpha = 0.05
     prop_2000s = train[train.century == 20.00]
+    prop_1800s = train[train.century == 18.00]
 
-    t, p = stats.ttest_1samp(prop_2000s.logerror, train.logerror.mean())
+    t, p = stats.ttest_1samp(prop_1800s.logerror, train.logerror.mean())
 
     print(f't = {t:.3f}')
     print(f'p = {p:.3f}')
 
-    null_hypothesis = 'there is no difference in Zestimate log error in properties built in the 2000s and the overall log error.'
+    null_hypothesis = 'there is no difference in Zestimate log error in properties built in the 1800s and the overall log error.'
 
     if p < alpha:
         print("We reject the hypothesis that", null_hypothesis)

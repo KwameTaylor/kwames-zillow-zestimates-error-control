@@ -117,13 +117,6 @@ def prepare_zillow(df):
     # Handle fips, turn into county names as column 'county'
     df = handle_fips(df)
 
-    # Encode County feature
-    # I will map strings into 0s, 1s, and 2s:
-    # 0 = Los Angeles County
-    # 1 = Orange County
-    # 2 = Ventura County
-    df.county = df.county.map({'Los Angeles': 0, 'Orange': 1, 'Ventura': 2})
-
     return df
 
 def handle_fips(df):
