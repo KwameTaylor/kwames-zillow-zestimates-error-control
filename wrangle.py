@@ -110,6 +110,8 @@ def prepare_zillow(df):
     df = df.drop(columns=['bedcnt'])
 
     # Add feature decade
+    # drop nulls first because it's faster and doesn't cost much
+    df = df.dropna(subset=['yearbuilt'])
     df['decade']= df.yearbuilt//10
     # Add feature century
     df['century']= df.yearbuilt//100

@@ -27,11 +27,11 @@ def viz_logerror(train):
 
 def corr_heatmap(X_train_scaled):
     '''
-    This function creates a heatmap of the correlation of all features scaled, minus longitude and latitude.
+    This function creates a heatmap of the correlation of all features scaled, minus longitude and latitude and redundant features.
     Takes a dataFrame as an argument
     '''
     # heatmap time!
-    heatmap_data = X_train_scaled.drop(columns=['latitude', 'longitude'])
+    heatmap_data = X_train_scaled.drop(columns=['latitude', 'longitude', 'decade', 'century'])
     corr = heatmap_data.corr()
     mask = np.triu(np.ones_like(corr, dtype=bool))
     ax = sns.heatmap(corr, mask=mask, center=0, vmin=0, vmax=1, cmap=sns.diverging_palette(95, 220, n=250, s=93, l=35), square=True) 

@@ -10,8 +10,7 @@ from sklearn.cluster import KMeans
 def cluster1(train, X, n_clusters):
 #   X = train_scaled[['sepal_width', 'sepal_length']]
 #n_clusters=5
-    kmeans = KMeans()
-    kmeans.fit(X)
+    kmeans = KMeans(n_clusters).fit(X)
 
     print(pd.DataFrame(kmeans.cluster_centers_, columns=X.columns))
 
@@ -20,10 +19,6 @@ def cluster1(train, X, n_clusters):
     print(kmeans.labels_.shape)
 
     train['cluster'] = kmeans.labels_
-
-    print(train)
-
-    print(train.groupby('cluster').mean())
 
 def cluster1_viz(train):
     fig, ax = plt.subplots(figsize=(13, 7))
