@@ -34,7 +34,7 @@ def corr_heatmap(X_train_scaled):
     heatmap_data = X_train_scaled.drop(columns=['latitude', 'longitude'])
     corr = heatmap_data.corr()
     mask = np.triu(np.ones_like(corr, dtype=bool))
-    ax = sns.heatmap(corr, mask=mask, center=0, vmin=-1, vmax=1, cmap=sns.diverging_palette(95, 220, n=250, s=93, l=35), square=True) 
+    ax = sns.heatmap(corr, mask=mask, center=0, vmin=0, vmax=1, cmap=sns.diverging_palette(95, 220, n=250, s=93, l=35), square=True) 
     ax.set_xticklabels(ax.get_xticklabels(), rotation=45, horizontalalignment='right')
     ax.set_yticklabels(ax.get_yticklabels(), rotation=0, horizontalalignment='right')
     plt.title('Which features have significant correlation?')
