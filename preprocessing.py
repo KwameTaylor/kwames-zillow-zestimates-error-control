@@ -15,14 +15,6 @@ def zillow_main_split(df):
     train_validate, test = train_test_split(df, test_size=.2, random_state=666)
     train, validate = train_test_split(train_validate, test_size=.3, random_state=666)
 
-    X_train = train.drop(columns='logerror')
-    X_validate = validate.drop(columns='logerror')
-    X_test = test.drop(columns='logerror')
-
-    y_train = train['logerror']
-    y_validate = validate['logerror']
-    y_test = test['logerror']
-
     return train, validate, test
 
 def zillow_Xy_split(train, validate, test):
@@ -57,31 +49,32 @@ def impute_nulls(df):
     df.value = df.value.fillna(df.value.median())
     return df
 
-def zillow_scale(X_train, X_validate, X_test):
+def zillow_scale(train, validate, test):
     '''
-    This function takes in X_train, X_validate, X_test
+    This function takes in train, validate, test
     dataFrames, and returns them each in scaled form.
     '''
-    scaler = MinMaxScaler().fit(X_train)
-    X_train_scaled = (pd.DataFrame(scaler.transform(X_train), 
-                      columns=X_train.columns, 
-                      index=X_train.index))
-    X_validate_scaled = (pd.DataFrame(scaler.transform(X_validate), 
-                     columns=X_validate.columns,
-                     index=X_validate.index))
-    X_test_scaled = (pd.DataFrame(scaler.transform(X_test), 
-                     columns=X_test.columns,
-                     index=X_test.index))
-    return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
+    scaler = MinMaxScaler().fit(train)
+    train_scaled = (pd.DataFrame(scaler.transform(train), 
+                      columns=train.columns, 
+                      index=train.index))
+    validate_scaled = (pd.DataFrame(scaler.transform(validate), 
+                     columns=validate.columns,
+                     index=validate.index))
+    test_scaled = (pd.DataFrame(scaler.transform(test), 
+                     columns=test.columns,
+                     index=test.index))
+    return scaler, train_scaled, validate_scaled, test_scaled
 
-def encode_county(df):
+# note: encode county currently in wrangle, move here in future iteration
+#def encode_county(df):
     # Encode County feature
     # I will map strings into 0s, 1s, and 2s:
     # 0 = Los Angeles County
     # 1 = Orange County
     # 2 = Ventura County
-    df.county = df.county.map({'Los Angeles': 0, 'Orange': 1, 'Ventura': 2})
-    return df
+#    df.county = df.county.map({'Los Angeles': 0, 'Orange': 1, 'Ventura': 2})
+#    return df
 
 def handle_outliers(df):
     '''This function WILL handle outliers. Implementation in later iteration.

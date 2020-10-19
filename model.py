@@ -7,13 +7,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-def create_cluster1(X_train_scaled, X, n_clusters):
+def create_cluster_area(train, train_scaled, X, n_clusters):
     kmeans = KMeans(n_clusters).fit(X)
-    X_train_scaled['cluster'] = kmeans.predict(X)
+    train_scaled['cluster_area'] = kmeans.predict(X)
+    train['cluster_area'] = kmeans.predict(X)
     centroids = pd.DataFrame(kmeans.cluster_centers_, columns=X.columns)
     return kmeans, centroids
 
-def cluster1_viz(train):
+def cluster_area_viz(train):
     fig, ax = plt.subplots(figsize=(13, 7))
 
     for cluster, subset in train.groupby('cluster'):
