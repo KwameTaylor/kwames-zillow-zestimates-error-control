@@ -7,18 +7,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-def cluster1(train, X, n_clusters):
-#   X = train_scaled[['sepal_width', 'sepal_length']]
-#n_clusters=5
+def create_cluster1(X_train_scaled, X, n_clusters):
     kmeans = KMeans(n_clusters).fit(X)
-
-    print(pd.DataFrame(kmeans.cluster_centers_, columns=X.columns))
-
-    print(X.shape)
-
-    print(kmeans.labels_.shape)
-
-    train['cluster'] = kmeans.labels_
+    X_train_scaled['cluster'] = kmeans.predict(X)
+    centroids = pd.DataFrame(kmeans.cluster_centers_, columns=X.columns)
+    return kmeans, centroids
 
 def cluster1_viz(train):
     fig, ax = plt.subplots(figsize=(13, 7))
@@ -31,7 +24,7 @@ def cluster1_viz(train):
     train.groupby('cluster').mean().plot.scatter(y='sepal_length', x='sepal_width', marker='x', s=5000, ax=ax, c='black')
     plt.show()
 
-def choose_k(X):
+def choose_k(kmeans, X):
     # sum of squared distances from each point to its cluster center
     kmeans.inertia_
 
@@ -45,3 +38,12 @@ def choose_k(X):
     ax = pd.Series(output).plot(figsize=(13, 7))
     ax.set(xlabel='k', ylabel='inertia', xticks=range(1, 12), title='The elbow method for determining k')
     ax.grid()
+
+def intertia_k(X):
+    with plt.style.context('seaborn-whitegrid'):
+        plt.figure(figsize=(9, 6))
+        pd.Series({k: KMeans(k).fit(X).inertia_ for k in range(2, 12)}).plot(marker='x')
+        plt.xticks(range(2, 12))
+        plt.xlabel('k')
+        plt.ylabel('inertia')
+        plt.title('The elbow method -\nChange in inertia as k increases')
