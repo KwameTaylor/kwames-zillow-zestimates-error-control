@@ -14,7 +14,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 |:----------:|:-----------------------------------------------------------------:|:-----------------:|
 | 10/15/2020 | Project planning, start on outline/bones of project.              |<ul><li>- [x] </li>
 | 10/17/2020 | Finish MVP of wrangle.py and preprocessing.py.                    |<ul><li>- [x] </li>
-| 10/18/2020 | Finish MVP of explore.py and start model.py MVP.                  |<ul><li>- [ ] </li>
+| 10/18/2020 | Finish MVP of explore.py and start model.py MVP.                  |<ul><li>- [x] </li>
 | 10/19/2020 | Finish model.py MVP and iterate through data science pipeline 1x. |<ul><li>- [ ] </li>
 | 10/20/2020 | Practice presentation, 1x iteration, sleep. (turn in project)     |<ul><li>- [ ] </li>
 | 10/21/2020 | Presentation day!                                                 |<ul><li>- [ ] </li>
