@@ -109,6 +109,11 @@ def prepare_zillow(df):
     df['bathbedcnt'] = df.bathcnt + df.bedcnt
     df = df.drop(columns=['bedcnt'])
 
+    # Add feature decade
+    df['decade']= df.yearbuilt//10
+    # Add feature century
+    df['century']= df.yearbuilt//100
+
     # Handle fips, turn into county names as column 'county'
     df = handle_fips(df)
 
