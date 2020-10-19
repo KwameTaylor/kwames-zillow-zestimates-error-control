@@ -73,3 +73,8 @@ def zillow_scale(X_train, X_validate, X_test):
                      columns=X_test.columns,
                      index=X_test.index))
     return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
+
+def handle_outliers(df):
+    '''This function WILL handle outliers. Implementation in later iteration.
+    '''
+    return df
