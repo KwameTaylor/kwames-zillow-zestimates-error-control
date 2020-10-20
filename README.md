@@ -45,17 +45,20 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [x] make README more thorough
 - [x] add the data dictionary the hypotheses to README
 - [x] review my notes and the project specs
-- [ ] **turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)**
-- [ ] change statistical test to be better regarding the distribution of years
+- [x] turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)
+- [ ] **change statistical test to be better regarding the distribution of years**
 - [ ] takeaways and conclusions on how where to focus efforts to reduce log error
 - [ ] put remaining notebook code into functions
 - [ ] add two more models and test the best model on test data
 - [ ] copy comments from acquire and prepare code into presentation notebook
 - [ ] practice presentation and make script/notes
+- [ ] second hypothesis test
 
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
+* plot centroids
 * geo.py implementation if extra time
+* plot elevation's relation to latitude/longitude to see if log error has anything to do with topographical data
 * make my module functions more generic and useful
 
 ---
