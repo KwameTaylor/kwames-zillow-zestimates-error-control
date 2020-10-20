@@ -60,6 +60,8 @@ Hypotheses:
 * x
 * x
 
+---
+
 Instructions for use and reproduction:
 ## Main notebook
 To see and read through the main notebook, you can navigate to ```kwames-zillow-zestimates-error-control.ipynb``` in this GitHub repository.
