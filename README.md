@@ -28,6 +28,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 **Pipeline iteration 2:**
 * Tidy the data a little further
 * Put functions into modules
+* Flesh out README
 * Run one statistical test
 * Explore and feature engineering with clustering
 
