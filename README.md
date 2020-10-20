@@ -9,7 +9,8 @@ Welcome to my data science clustering project: **Kwame's Zillow Zestimates Error
 
 I plan to create an MVP and then iterate through the data science pipeline multiple times.
 
-**Project Plan:**
+## Project Plan
+
 |    Date    |                                Goal                               |     Finished?     |
 |:----------:|:-----------------------------------------------------------------:|:-----------------:|
 | 10/15/2020 | Project planning, start on outline/bones of project.              |<ul><li>- [x] </li>
@@ -22,6 +23,8 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 The project deliverables are the following: **Jupyter Notebook** data science pipeline walkthrough with **conclusions**, data **visualizations**, **README**, and **modules with functions** (```wrangle.py```, ```preprocessing.py```, ```explore.py```, and ```model.py```).
 
 ---
+
+## Iterations through the Data Science pipeline
 
 **Pipeline iteration 1:**
 * Project plan and timeline
@@ -56,7 +59,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 
 ---
 
-### Data Dictionary:
+## Data Dictionary
 
 | Term                         | Definition                                                                              |
 |------------------------------|-----------------------------------------------------------------------------------------|
@@ -82,7 +85,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 
 ---
 
-### Hypotheses:
+## Hypotheses
 
 𝐻0: There is no difference in Zestimate log error in properties built in the 1800s and the overall log error.
 
