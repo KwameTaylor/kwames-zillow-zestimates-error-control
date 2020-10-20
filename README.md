@@ -21,11 +21,13 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 
 **Pipeline iteration 1:**
 * Reach the minimum/MVP for each stage to be able to move on to the next stage.
+
+**Pipeline iteration 2:**
 * Put functions into modules
 * Run one statistical test
 * Explore and feature engineering with clustering
 
-**Pipeline iteration 2 (to-do list):**
+**Pipeline iteration 3 (to-do list):**
 - [x] remove outliers with isolation forest
 - [ ] make cluster_area into dummy variables
 - [ ] change statistical test to be better regarding the distribution of years
