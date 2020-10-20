@@ -42,20 +42,20 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 
 **Pipeline iteration 3 (to-do list):**
 - [x] remove outliers with isolation forest
+- [x] make README more thorough
+- [x] add the data dictionary the hypotheses to README
 - [ ] **turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)**
 - [ ] change statistical test to be better regarding the distribution of years
 - [ ] takeaways and conclusions on how where to focus efforts to reduce log error
-- [ ] read my notes
-- [ ] read the project specs
+- [ ] review my notes and the project specs
 - [ ] put remaining notebook code into functions
-- [ ] add two more models
-- [ ] test the best model on test data
+- [ ] add two more models and test the best model on test data
 - [ ] copy comments from acquire and prepare code into presentation notebook
-- [x] make README more thorough
-- [x] add the data dictionary the hypotheses to README
 - [ ] practice presentation and make script/notes
 - [ ] title and label visualizations better
-- [ ] geo.py implementation if extra time
+
+**Things I'll save for future iterations for the sake of time:**
+* geo.py implementation if extra time
 
 ---
 
