@@ -54,8 +54,39 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [ ] title and label visualizations better
 - [ ] geo.py implementation if extra time
 
-Data Dictionary:
-[Table here]
+---
+
+### Data Dictionary:
+
+| Term                         | Definition                                                                              |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| parcelid (index)             | Unique identifier for parcels (lots)                                                    |
+| bathcnt                      | Number of bathrooms in home including fractional bathrooms                              |
+| sqft                         | Calculated total finished living area of the home                                       |
+| latitude                     | Latitude of the middle of the parcel multiplied by 10e6                                 |
+| longitude                    | Longitude of the middle of the parcel multiplied by 10e6                                |
+| yearbuilt                    | The Year the principal residence was built                                              |
+| value                        | The total tax assessed value of the parcel                                              |
+| county (engineered)          | County in which the parcel is located                                                   |
+| bathbedcnt (engineered)      | Number of bedrooms plus bathrooms in home                                               |
+| decade (engineered)          | The Decade the principal residence was built                                            |
+| century (engineered)         | The Century the principal residence was built                                           |
+| cluster_area (engineered)    | Clusters based on latitude, longitude, and county.                                      |
+| logerror (prediction target) | The target variable -- the amount of sum squared error on the Zestimate of the property |
+
+| County encoded | County             |
+|----------------|--------------------|
+| 0              | Los Angeles County |
+| 1              | Orange County      |
+| 2              | Ventura County     |
+|                |                    |
+|                |                    |
+|                |                    |
+|                |                    |
+|                |                    |
+|                |                    |
+
+---
 
 Hypotheses:
 * x
