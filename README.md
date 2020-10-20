@@ -56,6 +56,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
 * geo.py implementation if extra time
+* plot elevation's relation to latitude/longitude to see if log error has anything to do with topographical data
 * make my module functions more generic and useful
 
 ---
