@@ -79,12 +79,6 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 | 0              | Los Angeles County |
 | 1              | Orange County      |
 | 2              | Ventura County     |
-|                |                    |
-|                |                    |
-|                |                    |
-|                |                    |
-|                |                    |
-|                |                    |
 
 ---
 
