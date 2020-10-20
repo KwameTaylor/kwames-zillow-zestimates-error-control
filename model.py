@@ -7,11 +7,23 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-def create_cluster_area(train, train_scaled, X, n_clusters):
+def create_cluster_area(train, train_scaled, validate, validate_scaled, test, test_scaled, X, Xv, Xt, n_clusters):
+    '''
+    I'll make this function more generic for more useability on the next pipeline iteration.
+    '''
     kmeans = KMeans(n_clusters).fit(X)
+
     train_scaled['cluster_area'] = kmeans.predict(X)
     train['cluster_area'] = kmeans.predict(X)
+
+    validate_scaled['cluster_area'] = kmeans.predict(Xv)
+    validate['cluster_area'] = kmeans.predict(Xv)
+
+    test_scaled['cluster_area'] = kmeans.predict(Xt)
+    test['cluster_area'] = kmeans.predict(Xt)
+
     centroids = pd.DataFrame(kmeans.cluster_centers_, columns=X.columns)
+
     return kmeans, centroids
 
 def cluster_area_viz(train):
