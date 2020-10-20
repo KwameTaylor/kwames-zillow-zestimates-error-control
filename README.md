@@ -45,7 +45,8 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 - [ ] add two more models
 - [ ] test the best model on test data
 - [ ] copy comments from acquire and prepare code into presentation notebook
-- [ ] make README more thorough and add the data dictionary
+- [ ] make README more thorough
+- [x] add the data dictionary the hypotheses to README
 - [ ] practice presentation and make script/notes
 - [ ] title and label visualizations better
 - [ ] geo.py implementation if extra time
