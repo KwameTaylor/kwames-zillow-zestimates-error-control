@@ -42,7 +42,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 - [ ] title and label visualizations better
 - [ ] geo.py implementation if extra time
 
-The project deliverables are the following: **Jupyter Notebook data science pipeline walkthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).**
+The project deliverables are the following: **Jupyter Notebook** data science pipeline walkthrough with **conclusions**, data **visualizations**, **README**, and **modules with functions** (wrangle.py, preprocessing.py, explore.py, and model.py).**
 
 Data Dictionary:
 [Table here]
