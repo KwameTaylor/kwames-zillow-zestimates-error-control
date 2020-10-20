@@ -56,14 +56,14 @@ Instructions for use and reproduction:
 ## Main notebook
 To see and read through the main notebook, you can navigate to ```kwames-zillow-zestimates-error-control.ipynb``` in this GitHub repository.
 
-You can explore the functions from the notebook more indepth in the wrangle.py, preprocessing.py, explore.py, and model.py files.
+You can explore the functions from the notebook more indepth in the ```wrangle.py```, ```preprocessing.py```, ```explore.py```, and ```model.py``` files.
 
 ## Setup
 
 In order to run the code in this repository, you'll need:
 
 1. An installation of python through anaconda
-2. An 'env.py' file that defines the following variables:
+2. An ```env.py``` file that defines the following variables:
   - 'user'
   - 'host'
   - 'password'
