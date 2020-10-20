@@ -52,6 +52,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [ ] add two more models and test the best model on test data
 - [ ] copy comments from acquire and prepare code into presentation notebook
 - [ ] practice presentation and make script/notes
+- [ ] plot centroids
 
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
