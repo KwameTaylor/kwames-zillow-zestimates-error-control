@@ -60,3 +60,10 @@ def intertia_k(X):
         plt.xlabel('k')
         plt.ylabel('inertia')
         plt.title('The elbow method -\nChange in inertia as k increases')
+
+def cluster_area_dummies(train):
+    area_dummies = pd.get_dummies(train.cluster_area, drop_first=True)
+    train = pd.concat([train, area_dummies], axis=1)
+    train = train.rename(columns={1: "cluster_area_1", 2: "cluster_area_2", 3: "cluster_area_3", 4: "cluster_area_4", 5: "cluster_area_5"})
+    train = train.drop(columns=['cluster_area'])
+    return train
