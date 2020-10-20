@@ -74,8 +74,8 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 | bathbedcnt (engineered)      | Number of bedrooms plus bathrooms in home                                               |
 | decade (engineered)          | The Decade the principal residence was built                                            |
 | century (engineered)         | The Century the principal residence was built                                           |
-| cluster_area (engineered)    | Clusters based on latitude, longitude, and county.                                      |
-| logerror (prediction target) | The target variable -- the amount of sum squared error on the Zestimate of the property |
+| cluster_area (engineered)    | Clusters based on latitude, longitude, and county                                       |
+| logerror (prediction target) | The difference between log of Zestimate (prediction) and log of actual sales price of a property   |
 
 | County encoded | County             |
 |----------------|--------------------|
