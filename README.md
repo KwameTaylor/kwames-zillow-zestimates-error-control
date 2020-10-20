@@ -21,6 +21,8 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 
 The project deliverables are the following: **Jupyter Notebook** data science pipeline walkthrough with **conclusions**, data **visualizations**, **README**, and **modules with functions** (```wrangle.py```, ```preprocessing.py```, ```explore.py```, and ```model.py```).
 
+---
+
 **Pipeline iteration 1:**
 * Project plan and timeline
 * README outline
