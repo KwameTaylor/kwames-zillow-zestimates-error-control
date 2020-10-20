@@ -82,17 +82,11 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 
 ---
 
-Hypotheses:
+### Hypotheses:
 
-$
-\begin{align*}
-   H_0 & : \text{There is no difference in Zestimate log error in properties built in the 1800s and the overall log error.}
-   \\
-   H_a & : \text{There is a difference in Zestimate log error in properties built in the 1800s and the overall log error.}
-   \\
-    \alpha & : \text{0.05}
-\end{align*}
-$
+𝐻0: There is no difference in Zestimate log error in properties built in the 1800s and the overall log error.
+
+𝐻𝑎: There is a difference in Zestimate log error in properties built in the 1800s and the overall log error.
 
 ---
 
