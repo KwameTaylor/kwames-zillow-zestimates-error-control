@@ -26,6 +26,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 * Reach the minimum/MVP for each stage to be able to move on to the next stage.
 
 **Pipeline iteration 2:**
+* Recalibrate project plan timeline
 * Tidy the data a little further
 * Put functions into modules
 * Flesh out README
