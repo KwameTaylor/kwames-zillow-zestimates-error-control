@@ -19,7 +19,30 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/20/2020 | Practice presentation, 1x iteration, sleep. (turn in project)     |<ul><li>- [ ] </li>
 | 10/21/2020 | Presentation day!                                                 |<ul><li>- [ ] </li>
 
-The project deliverables are the following: Jupyter Notebook data science pipeline walkthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).
+**Pipeline iteration 1:**
+* Reach the minimum/MVP for each stage to be able to move on to the next stage.
+* Put functions into modules
+* Run one statistical test
+* Explore and feature engineering with clustering
+
+**Pipeline iteration 2 (to-do list):**
+- [x] remove outliers with isolation forest
+- [ ] make cluster_area into dummy variables
+- [ ] change statistical test to be better regarding the distribution of years
+- [ ] turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)
+- [ ] takeaways and conclusions on how where to focus efforts to reduce log error
+- [ ] read my notes
+- [ ] read the project specs
+- [ ] put remaining notebook code into functions
+- [ ] add two more models
+- [ ] test the best model on test data
+- [ ] copy comments from acquire and prepare code into presentation notebook
+- [ ] make README more thorough and add the data dictionary
+- [ ] practice presentation and make script/notes
+- [ ] title and label visualizations better
+- [ ] geo.py implementation if extra time
+
+The project deliverables are the following: **Jupyter Notebook data science pipeline walkthrough with conclusion, data visualizations, README, and modules with functions (wrangle.py, preprocessing.py, explore.py, and model.py).**
 
 Data Dictionary:
 [Table here]
@@ -30,6 +53,10 @@ Hypotheses:
 * x
 
 Instructions for use and reproduction:
+## Main notebook
+To see and read through the main notebook, you can navigate to ```kwames-zillow-zestimates-error-control.ipynb``` in this GitHub repository.
+
+You can explore the functions from the notebook more indepth in the wrangle.py, preprocessing.py, explore.py, and model.py files.
 
 ## Setup
 
