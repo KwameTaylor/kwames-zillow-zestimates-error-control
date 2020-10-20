@@ -39,7 +39,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 
 **Pipeline iteration 3 (to-do list):**
 - [x] remove outliers with isolation forest
-- [ ] turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)
+- [ ] **turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)**
 - [ ] change statistical test to be better regarding the distribution of years
 - [ ] takeaways and conclusions on how where to focus efforts to reduce log error
 - [ ] read my notes
