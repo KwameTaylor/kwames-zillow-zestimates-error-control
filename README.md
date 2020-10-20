@@ -20,9 +20,13 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/21/2020 | Presentation day!                                                 |<ul><li>- [ ] </li>
 
 **Pipeline iteration 1:**
+* Project plan and timeline
+* README outline
+* Structure project bones
 * Reach the minimum/MVP for each stage to be able to move on to the next stage.
 
 **Pipeline iteration 2:**
+* Tidy the data a little further
 * Put functions into modules
 * Run one statistical test
 * Explore and feature engineering with clustering
