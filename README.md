@@ -52,7 +52,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [x] add two more models and test the best model on test data
 - [x] copy comments from prepare code into presentation notebook
 - [x] conclusions
-- [ ] practice presentation and make script/notes
+- [x] practice presentation and make script/notes
 
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
