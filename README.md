@@ -17,8 +17,8 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/17/2020 | Finish MVP of wrangle.py and preprocessing.py.                    |<ul><li>- [x] </li>
 | 10/18/2020 | Finish MVP of explore.py and start model.py MVP.                  |<ul><li>- [x] </li>
 | 10/19/2020 | Finish model.py MVP and iterate through data science pipeline 1x. |<ul><li>- [x] </li>
-| 10/20/2020 | Practice presentation, 1x iteration, sleep. (turn in project)     |<ul><li>- [ ] </li>
-| 10/21/2020 | Presentation day!                                                 |<ul><li>- [ ] </li>
+| 10/20/2020 | Practice presentation, 1x iteration, sleep.                       |<ul><li>- [ ] </li>
+| 10/21/2020 | Presentation day! (turn in project)                               |<ul><li>- [ ] </li>
 
 The project deliverables are the following: **Jupyter Notebook** data science pipeline walkthrough with **conclusions**, data **visualizations**, **README**, and **modules with functions** (```wrangle.py```, ```preprocessing.py```, ```explore.py```, and ```model.py```).
 
@@ -48,12 +48,11 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [x] turn cluster_area into dummy variables (i.e. is_cluster_area_1, is_cluster_area_2, etc.)
 - [x] change statistical test to be better regarding the distribution of years
 - [x] takeaways on how where to focus efforts to reduce log error
-- [ ] put remaining notebook code into functions
+- [x] put remaining notebook code into functions
 - [ ] add two more models and test the best model on test data
 - [ ] copy comments from acquire and prepare code into presentation notebook
 - [ ] conclusions
 - [ ] practice presentation and make script/notes
-- [ ] second hypothesis test
 
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
@@ -61,6 +60,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 * geo.py implementation if extra time
 * plot elevation's relation to latitude/longitude to see if log error has anything to do with topographical data
 * make my module functions more generic and useful
+* another hypothesis test
 
 ---
 
@@ -92,9 +92,11 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 
 ## Hypotheses
 
-𝐻0: There is no difference in Zestimate log error in properties built in the 1800s and the overall log error.
-
+𝐻0: There is no difference in Zestimate log error in properties built in the 1800s and the overall log error.<br>
 𝐻𝑎: There is a difference in Zestimate log error in properties built in the 1800s and the overall log error.
+
+𝐻0: There is no difference in Zestimate log error in properties built in the 1960s and the overall log error.<br>
+𝐻𝑎: There is a difference in Zestimate log error in properties built in the 1960s and the overall log error.
 
 ---
 
