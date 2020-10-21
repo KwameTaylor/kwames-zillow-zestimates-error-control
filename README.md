@@ -19,7 +19,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/18/2020 | Finish MVP of explore.py and start model.py MVP.                  |<ul><li>- [x] </li>
 | 10/19/2020 | Finish model.py MVP and iterate through data science pipeline 1x. |<ul><li>- [x] </li>
 | 10/20/2020 | Practice presentation, 1x iteration, sleep.                       |<ul><li>- [x] </li>
-| 10/21/2020 | Presentation day! (turn in project)                               |<ul><li>- [ ] </li>
+| 10/21/2020 | Presentation day! (turn in project)                               |<ul><li>- [x] </li>
 
 The project deliverables are the following: **Jupyter Notebook** data science pipeline walkthrough with **conclusions**, data **visualizations**, **README**, and **modules with functions** (```wrangle.py```, ```preprocessing.py```, ```explore.py```, and ```model.py```).
 
