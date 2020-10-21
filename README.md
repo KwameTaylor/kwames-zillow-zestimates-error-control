@@ -57,7 +57,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
 * plot centroids
-* geo.py implementation
+* GeoPy implementation
 * plot elevation's relation to latitude/longitude to see if log error has anything to do with topographical data
 * make my module functions more generic and useful
 * another hypothesis test
@@ -117,3 +117,17 @@ In order to run the code in this repository, you'll need:
   - 'password'
 
 The code in here was developed on MacOS, but should run fine anywhere you can install python + anaconda.
+
+---
+
+### Big thanks to the following resources for education and inspiration:
+* <a href="https://ds.codeup.com/">Codeup curriculum</a>
+* <a href="https://towardsdatascience.com/simple-and-multiple-linear-regression-in-python-c928425168f9">Simple and Multiple Linear Regression in Python</a>
+* <a href="https://geopy.readthedocs.io/en/stable/">GeoPy</a>
+* <a href="https://machinelearningmastery.com/model-based-outlier-detection-and-removal-in-python/">4 Automatic Outlier Detection Algorithms in Python</a>
+* <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html">Isolation Forest documentation</a>
+* <a href="https://towardsdatascience.com/outlier-detection-with-isolation-forest-3d190448d45e">Outlier Detection with Isolation Forest</a>
+* <a href="https://www.tablesgenerator.com/markdown_tables#">Markdown Table generator</a>
+* <a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.13-geographic-data-with-basemap.html">Geographic Data with Basemap</a>
+* <a href="https://dardenreviews.github.io/">Faith's Darden reviews, of course!</a>
+* And extra big thanks to my Codeup Darden cohort colleagues for being a constant source of knowledge, help, and motivation!
