@@ -1,6 +1,6 @@
 ### Clustering Project
 **Kwame Taylor, Codeup Darden Cohort, Oct 2020**
-
+---
 <img src="https://www.underconsideration.com/brandnew/archives/zillow_logo.png">
 
 # Kwame's Zillow Zestimates Error Control
