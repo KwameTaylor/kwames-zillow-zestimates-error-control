@@ -49,7 +49,7 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [x] change statistical test to be better regarding the distribution of years
 - [x] takeaways on how where to focus efforts to reduce log error
 - [x] put remaining notebook code into functions
-- [ ] add two more models and test the best model on test data
+- [x] add two more models and test the best model on test data
 - [ ] copy comments from acquire and prepare code into presentation notebook
 - [ ] conclusions
 - [ ] practice presentation and make script/notes
