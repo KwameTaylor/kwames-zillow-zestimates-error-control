@@ -17,7 +17,7 @@ I plan to create an MVP and then iterate through the data science pipeline multi
 | 10/17/2020 | Finish MVP of wrangle.py and preprocessing.py.                    |<ul><li>- [x] </li>
 | 10/18/2020 | Finish MVP of explore.py and start model.py MVP.                  |<ul><li>- [x] </li>
 | 10/19/2020 | Finish model.py MVP and iterate through data science pipeline 1x. |<ul><li>- [x] </li>
-| 10/20/2020 | Practice presentation, 1x iteration, sleep.                       |<ul><li>- [ ] </li>
+| 10/20/2020 | Practice presentation, 1x iteration, sleep.                       |<ul><li>- [x] </li>
 | 10/21/2020 | Presentation day! (turn in project)                               |<ul><li>- [ ] </li>
 
 The project deliverables are the following: **Jupyter Notebook** data science pipeline walkthrough with **conclusions**, data **visualizations**, **README**, and **modules with functions** (```wrangle.py```, ```preprocessing.py```, ```explore.py```, and ```model.py```).
@@ -49,15 +49,15 @@ The project deliverables are the following: **Jupyter Notebook** data science pi
 - [x] change statistical test to be better regarding the distribution of years
 - [x] takeaways on how where to focus efforts to reduce log error
 - [x] put remaining notebook code into functions
-- [ ] add two more models and test the best model on test data
-- [ ] copy comments from acquire and prepare code into presentation notebook
-- [ ] conclusions
+- [x] add two more models and test the best model on test data
+- [x] copy comments from prepare code into presentation notebook
+- [x] conclusions
 - [ ] practice presentation and make script/notes
 
 **Things I'll save for future iterations for the sake of time:**
 * title and label visualizations better
 * plot centroids
-* geo.py implementation if extra time
+* geo.py implementation
 * plot elevation's relation to latitude/longitude to see if log error has anything to do with topographical data
 * make my module functions more generic and useful
 * another hypothesis test
