@@ -8,6 +8,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, explained_variance_score, mean_absolute_error
 from sklearn.linear_model import LinearRegression, TweedieRegressor
 from sklearn.ensemble import IsolationForest
+from sklearn.feature_selection import RFE
 
 def zillow_main_split(df):
     '''
@@ -126,3 +127,18 @@ def concat_dfs(train, X_train, y_train):
     train['logerror'] = y_train
     print('Shape:', train.shape)
     return train
+
+def my_RFE(X, k, train_scaled):
+    # create and fit linear regression object
+    lm = LinearRegression(normalize = True)
+    lm.fit(X, train_scaled.logerror)
+    # create and fit the rfe object
+    rfe = RFE(lm, k)
+    rfe.fit(X, train_scaled.logerror)
+    X.columns[rfe.support_]
+
+    print(rfe.support_)
+
+    print('\nRFE Selected Features:\n', X.columns[rfe.support_])
+
+    print(rfe.ranking_)
