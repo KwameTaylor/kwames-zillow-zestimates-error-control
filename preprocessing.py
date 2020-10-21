@@ -140,5 +140,3 @@ def my_RFE(X, k, train_scaled):
     print(rfe.support_)
 
     print('\nRFE Selected Features:\n', X.columns[rfe.support_])
-
-    print(rfe.ranking_)
